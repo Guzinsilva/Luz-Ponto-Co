@@ -47,11 +47,21 @@ body {
     grid-column: 2;
     justify-self: end;
     margin-left: 200px;
+    transition: 0.3s;
+}
+
+.beneficios:hover {
+    color: #EC0114;
 }
 
 .contato {
     grid-column: 3;
     justify-self: center;
+    transition: 0.3s;
+}
+
+.contato:hover {
+    color: #EC0114;
 }
 
 .botao-generico-contrate-agora{
@@ -64,6 +74,13 @@ body {
     text-decoration: none;
     text-align: center;
     font-family: "Oswald", sans-serif;
+    transition: 0.3s;
+}
+
+.botao-generico-contrate-agora:hover {
+    color: #EC0114;
+    background-color: #ffffff;
+    font-weight: bolder;
 }
 
 .contrate-agora {
@@ -73,31 +90,38 @@ body {
 
 /*///////////////////////////////////// Apresentação ////////////////////////////////////////*/
 .container {
-    justify-content: center;
     display: grid;
     margin: 75px;
     padding:20px;
-    place-items: center;
+    grid-template-columns: 0.2fr 0.2fr;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .apresentacao {
     display: grid;
-    align-content: center;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;  
-    justify-content: center;
-    gap: 10px;
-}
-.imagem{
-    grid-column: 2;
-    margin-right: 250px;
+    gap: 40px;
 }
 
-h3 {
+.titulo-apresentacao {
     font-family:"Oswald", sans-serif;
     color: #ffffff;
-    margin-left: 200px;
+    grid-column: 1;
+    justify-self: center;
 }
+
+.botao-apresentacao {
+    margin-left: 0;
+}
+
+
+.imagem{
+    justify-self: center;
+    grid-column: 2;
+}
+
 img {
     max-width: 350px;
     height: 350px;
@@ -107,14 +131,74 @@ img {
 .botao-generico {
     background-color: #EC0114;
     color: #ffffff;
+    width: 242px;
+    height: 40px;
+    border-radius: 50px;
+    border: #000000 solid 1px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    grid-column: 1;
+    transition: 0.3s;
+}
+
+.botao-generico:hover {
+    color: #EC0114;
+    background-color: #ffffff;
+    font-weight: bolder;
+}
+
+/*///////////////////////// APRESENTACAO 02 ///////////////////////*/
+
+.container2 {
+    display: grid;
+    justify-content: center;
+}
+
+.apresentacao2 {
+    background-color: #262626;
+    display: grid;
+    margin: 0px;
+    width: 692px;
+    height: 400px;
+    border-radius: 10px;
+}
+.titulo-apresentacao2 {
+    justify-self: center;
+    text-align: center;
+    font-family:"Jockey One", sans-serif;
+    color: #ffffff;
+}
+ .subtitulo {
+    text-align: center;
+    color: #ffffff;
+    font-family:"Oswald", sans-serif;
+    margin: 15px;
+ }
+
+ .textos-apresentacao{
+    color: #ffffff;
+    text-align: justify;
+    font-family:"Oswald", sans-serif;
+    padding: 10 px;
+ }
+
+ .botao-conheca{
+    background-color: #EC0114;
+    color: #ffffff;
     width: 200px;
     height: 25px;
     border-radius: 50px;
-    border: #000000 solid 1px;
+    border: #EC0114 solid 1px;
     text-decoration: none;
     text-align: center;
     font-family: "Oswald", sans-serif;
     margin: 20px;
     grid-column: 1;
-    margin-left: 200px;
+}
+.fa-regular{
+    color: #EC0114;
+    padding: 20px;
 }
