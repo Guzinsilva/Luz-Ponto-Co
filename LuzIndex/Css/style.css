@@ -184,6 +184,7 @@ img {
     font-family:"Oswald", sans-serif;
     padding: 0px;
     margin: 4px;
+    margin-left: 150px;
  }
 
 .botao-conheca{
@@ -196,3 +197,98 @@ img {
     color: #EC0114;
     padding: 15px;
 }
+
+/*////////////////////// APRESENTACAO 3 ///////////////////*/
+
+.container3 {
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 525px;
+}
+
+.title {
+    color: #000000;
+    font-family:"Jockey One", sans-serif;
+    grid-column: 1;
+    place-self: center;
+    margin-top: 30px;
+}
+
+.linha {
+    display: grid;
+    grid-column: 1;
+    background-color: #EC0114;
+    height: 2px;
+    width: 350px;
+    justify-content: center;
+    place-self: center;
+}
+
+.apresentacao3 {
+    background-color:#262626;
+    display: grid;
+    margin:100px;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    grid-column: 1;
+    margin-top: 30px;
+    justify-content: center;
+    place-self: center;
+}
+
+.fa-solid {
+    color: #868686;
+    padding: 10px;
+
+}
+
+.subtitulo1 {
+    color:#f2f2f2;
+    font-family:"Jockey One", sans-serif;
+    text-align: center;
+    
+}
+
+.text {
+    color: #f2f2f2;
+    font-family:"Oswald", sans-serif;
+    text-align: center;
+
+}
+
+/*////////////////////// Formulário ///////////////////*/
+
+.formulario {
+    display: flex;
+    width: 300px;
+    height: 430px;
+    grid-column: 2;
+    grid-row: 1/4;
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 10px;
+    place-self: center;
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 80px;
+}
+
+.input-padrao {
+    display: block;
+    width: 275px;
+    height: 43px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.botao-formulario {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
