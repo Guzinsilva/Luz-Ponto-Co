@@ -9,6 +9,12 @@
     font-style: normal;
 }
 
+.krona-one-regular {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 /*<uniquifier>: Use a unique and descriptive class name*/
 
 .oswald-{
@@ -20,6 +26,9 @@
 
 body {
     background-color: #0D0D0D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*//////////////////////////////// Cabecalho ////////////////////////////////*/
@@ -30,6 +39,7 @@ body {
     place-items: center;
     background-color: #000000;
     height: 45px;
+    width: 100vw;
 }
 
 .texto-cabecalho {
@@ -89,20 +99,22 @@ body {
 }
 
 /*///////////////////////////////////// Apresentação ////////////////////////////////////////*/
+.principal {
+    width: 1000px;
+}
+
 .container {
     display: grid;
-    margin: 75px;
-    padding:20px;
-    grid-template-columns: 0.2fr 0.2fr;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
     gap: 100px;
     align-items: center;
     justify-content: center;
-
 }
 
 .apresentacao {
     display: grid;
-    gap: 40px;
+    gap: 5px;
 }
 
 .titulo-apresentacao {
@@ -113,7 +125,9 @@ body {
 }
 
 .botao-apresentacao {
-    margin-left: 0;
+    padding: 10px;
+    justify-self: center;
+
 }
 
 
@@ -123,10 +137,7 @@ body {
 }
 
 img {
-    max-width: 350px;
-    height: 350px;
-    border-radius: 15px;
-    display: block;
+    border-radius: 50px;
 }
 .botao-generico {
     background-color: #EC0114;
@@ -142,6 +153,7 @@ img {
     font-family: "Oswald", sans-serif;
     grid-column: 1;
     transition: 0.3s;
+    margin: 40px;
 }
 
 .botao-generico:hover {
@@ -153,61 +165,66 @@ img {
 /*///////////////////////// APRESENTACAO 02 ///////////////////////*/
 
 .container2 {
-    display: grid;
-    justify-content: center;
+    padding: 20px;
 }
 
 .apresentacao2 {
     background-color: #262626;
-    display: grid;
-    margin: 0px;
-    width: 692px;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     border-radius: 10px;
 }
 .titulo-apresentacao2 {
-    justify-self: center;
-    text-align: center;
     font-family:"Jockey One", sans-serif;
     color: #ffffff;
+    margin-bottom: 10px;
 }
+
  .subtitulo {
-    text-align: center;
     color: #ffffff;
     font-family:"Oswald", sans-serif;
-    margin: 15px;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 50px;
+
  }
 
  .textos-apresentacao{
     color: #ffffff;
-    text-align: justify;
     font-family:"Oswald", sans-serif;
-    padding: 0px;
-    margin: 4px;
-    margin-left: 150px;
+    margin-bottom: 20px;
  }
 
 .botao-conheca{
-    justify-self: center;
-    margin: 30px;
-    border: 1px solid #EC0114;
+    border: 1px solid #262626;
+    margin: 20px 30px;
+    padding: 10px;
 }
 
 .fa-regular{
     color: #EC0114;
-    padding: 15px;
+    padding: 20px;
 }
 
-/*////////////////////// APRESENTACAO 3 ///////////////////*/
+/*////////////////////// APRESENTACAO 03 ///////////////////*/
+
+.fundo-branco {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    width: 100vw;
+}
 
 .container3 {
-    background-color: #f2f2f2;
     display: grid;
-    grid-template-columns: 0.3fr 0.3fr;
-    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     align-items: center;
     justify-content: center;
-    height: 525px;
+    width: 960px;
+    padding: 20px;
 }
 
 .title {
@@ -231,14 +248,14 @@ img {
 .apresentacao3 {
     background-color:#262626;
     display: grid;
-    margin:100px;
-    width: 400px;
+    padding: 20px;
     height: 300px;
     border-radius: 15px;
     grid-column: 1;
     margin-top: 30px;
     justify-content: center;
     place-self: center;
+
 }
 
 .fa-solid {
@@ -265,22 +282,19 @@ img {
 
 .formulario {
     display: flex;
-    width: 300px;
-    height: 430px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-column: 2;
     grid-row: 1/4;
     background-color: #262626;
     padding: 20px;
     border-radius: 10px;
-    place-self: center;
-    justify-content: center;
-    place-items: center;
     margin-bottom: 80px;
 }
 
 .input-padrao {
-    display: block;
-    width: 275px;
+    width: 97%;
     height: 43px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -288,7 +302,56 @@ img {
 
 .botao-formulario {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 0 auto;
+    padding: 20px;
+    height: unset;
+
+
+}
+/*ta quase em*/
+
+/*////////////////// APRESENTACAO 04 ////////////*/
+
+.container4 {
+    padding: 20px;
 }
 
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.titulo-apresentacao3 {
+    justify-self: center;
+    text-align: center;
+    font-family:"Jockey One", sans-serif;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.textos-apresentacao4{
+    color: #ffffff;
+    text-align: center;
+    font-family:"Oswald", sans-serif;
+    padding: 0px;
+    margin: 4px;
+ }
+
+ .linha {
+    display: grid;
+    grid-column: 1;
+    background-color: #EC0114;
+    height: 2px;
+    width: 350px;
+    justify-content: center;
+    place-self: center;
+}
+
+ .fa-solid {
+    color: #ffffff;
+    padding: 20px;
+}
