@@ -1,0 +1,113 @@
+@media (max-width: 1024px) {
+
+    .cabecalho {
+        display: none;
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    .fundo-branco {
+         width: 100%;
+    }
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: #121212;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .titulo-apresentacao {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 50px 50px 0 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    
+    /*////////// APRESENTACAO 2 ///////////*/
+
+    .container2 {
+        display:flex;
+        flex-direction: column;
+    }
+    .apresentacao2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna-texto {
+        align-items: start;
+    }
+
+    .titulo-apresentacao2 {
+        text-align: center;
+    }
+
+    .textos-apresentacao {
+        text-align: start;
+    }
+
+    
+    /*//////// APRESENTACAO 3 //////////////*/
+    
+    .container3 {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 100vw;
+    }
+
+    .apresentacao3 {
+        padding: 20px;
+        height: 400px;
+    }
+    
+    .linha {
+        width: 80%;
+    }
+    
+    /*///////// APRESENTACAO 4 //////////*/
+    
+    .linha00 {
+        width: 80%;
+    }
+    
+    /*////////// WEB DESIGN /////////////*/
+
+    .linha01 {
+        width: 80%;
+    }
+
+    .webdesign {
+        margin: 0;
+    }
+
+
+    /*/////////// FOOTER /////////////////*/
+    
+    .container6 {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+        gap: 0;
+    }
+
+    .rodape {
+        padding: 0;
+    }
+}
