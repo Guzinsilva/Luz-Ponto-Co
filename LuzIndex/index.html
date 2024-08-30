@@ -66,15 +66,18 @@
             </div>
             
             <section class="formulario">
-                <form action="">
-                    <input type="text" id="nome" class="input-padrao" placeholder="Qual seu nome?" required>
-                    <input type="email" id="email" class="input-padrao" placeholder="E-mail corporativo" required>
-                    <input type="tel" id="telefone" class="input-padrao" placeholder="Seu Telefone" required> 
-                    <input type="text" id="nome-empresa" class="input-padrao" placeholder="Qual o nome da sua empresa ?" required>
-                    <select name="lista-faturamento" id="faturamento" class="input-padrao">
-                            <option value="defaut">Qual o seu faturamento ?</option>
-                            <option value="5000">Até R$ 5.000,00</option>
-                            <option value="10000">Acima de R$ 10.000,00</option>
+                <form id="contatoDoFormulario">
+                    <input type="text" id="nome" name="nome" class="input-padrao" placeholder="Qual seu nome?" required>
+                <input type="email" id="email" name="email" class="input-padrao" placeholder="E-mail corporativo" required>
+                <input type="tel" id="telefone" name="telefone" class="input-padrao" placeholder="Seu Telefone" required> 
+                <input type="text" id="nome_empresa" name="nome_empresa" class="input-padrao" placeholder="Qual o nome da sua empresa ?" required>
+                <select name="faturamento" id="faturamento" class="input-padrao" required>
+                            <option name="faturamento" value="defaut">Qual o seu faturamento ?</option>
+                            <option name="faturamento" value="15.000">Até R$ 15.000,00</option>
+                            <option name="faturamento" value="30.000">Até R$ 30.000,00</option>
+                            <option name="faturamento" value="50.000">Até R$ 50.000,00</option>
+                            <option name="faturamento" value="70.000">Até R$ 70.000,00</option>
+                            <option name="faturamento" value="100.000">Acima de R$ 100.000,00</option>
                     </select>
                     <input type="submit" value="RECEBA MAIS INFORMAÇÕES" class="botao-generico botao-formulario">
                 </form>
@@ -132,6 +135,7 @@
 
         </footer>
     </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="Js/script.js"></script>
 </body>
 </html>
